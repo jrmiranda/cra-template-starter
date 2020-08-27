@@ -1,10 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## How to use this template
-
-Execute the command:
-
-`npx create-react-app my-app --template @jrmiranda/starter`
+## How to contribute?
+Just [create an issue](https://github.com/jrmiranda/cra-template-starter/issues).
 
 ## What comes in this template
 - [React Spine](https://github.com/jrmiranda/react-spine)
