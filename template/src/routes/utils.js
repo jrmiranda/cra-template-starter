@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Redirect } from 'react-router-dom'
-import { isAuthenticated } from 'lib/auth'
+import { isAuthenticated } from 'services/auth'
 
 export const UserRoute = ({ component: Component, template: Template, restrict, fallback, ...rest }) => {
 	let shouldRender = false
@@ -37,14 +37,14 @@ export const UserRoute = ({ component: Component, template: Template, restrict, 
 />)
 }
 
-export const PublicRoute = ({ component: Component, rest }) => (
+export const PublicRoute = ({ component: Component, ...rest }) => (
 	<UserRoute component={Component} restrict="public" {...rest} />
 )
 
-export const PrivateRoute = ({ component: Component, rest }) => (
+export const PrivateRoute = ({ component: Component, ...rest }) => (
 	<UserRoute component={Component} restrict="private" fallback="/login" {...rest} />
 )
 
-export const GuestRoute = ({ component: Component, rest }) => (
+export const GuestRoute = ({ component: Component, ...rest }) => (
 	<UserRoute component={Component} restrict="guest" {...rest} />
 )

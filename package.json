@@ -1,6 +1,6 @@
 {
   "name": "@jrmiranda/cra-template-starter",
-  "version": "1.0.2",
+  "version": "1.0.3",
 	"description": "A base template for React",
 	"main": "template.json",
   "repository": {
